@@ -19,7 +19,7 @@
             <Button x:Name="button_8" Content="8" HorizontalAlignment="Left" Margin="10,369,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Button_8_Click"/>
             <Button x:Name="button_9" Content="9" HorizontalAlignment="Left" Margin="10,414,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Button_9_Click"/>
             <Button x:Name="button_10" Content="10" HorizontalAlignment="Left" Margin="10,459,0,0" VerticalAlignment="Top" Width="40" Height="40" Click="Button_10_Click"/>
-            <TextBlock x:Name="Description_1" HorizontalAlignment="Left" Height="40" Margin="55,55,0,0"  VerticalAlignment="Top" Width="670" FontFamily="Arial" FontSize="18" LineHeight="20"/>
+            <TextBlock x:Name="Description_1" HorizontalAlignment="Left" Height="40" Margin="55,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="670" FontFamily="Arial" FontSize="18" LineHeight="20"/>
             <TextBlock x:Name="Result_1" HorizontalAlignment="Left" Height="40" Margin="730,55,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="40" FontFamily="Arial" FontSize="18" LineHeight="20"/>
             <TextBlock x:Name="Description_2" HorizontalAlignment="Left" Height="40" Margin="55,100,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="670" FontFamily="Arial" FontSize="18" LineHeight="20"/>
             <TextBlock x:Name="Result_2" HorizontalAlignment="Left" Height="40" Margin="730,100,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="40" FontFamily="Arial" FontSize="18" LineHeight="20"/>
@@ -45,13 +45,14 @@
             <TextBlock HorizontalAlignment="Left" Height="40" Margin="605,10,0,0" TextWrapping="Wrap" Text="Балів:" VerticalAlignment="Top" Width="105" FontSize="36" FontFamily="Arial"/>
 
         </Grid>
-        
-        <Grid x:Name="Question" Margin="0,0,0,10" Visibility="Hidden">
-            <TextBlock x:Name="Description" HorizontalAlignment="Left" Height="175" Margin="10,35,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="774" FontSize="36" FontFamily="Arial" TextAlignment="Center"/>
-            <TextBlock x:Name="Letters" HorizontalAlignment="Left" Height="45" Margin="10,215,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="720" FontSize="36" FontFamily="Arial" TextAlignment="Center"/>
-            <TextBox x:Name="answer" HorizontalAlignment="Left" Height="50" Margin="10,310,0,0" TextWrapping="Wrap" Text="Введіть вашу відповідь тут" VerticalAlignment="Top" Width="774" TextAlignment="Center" FontFamily="Arial" FontSize="36" AutoWordSelection="True"/>
-            <Button x:Name="answer_button" Content="Відповісти" HorizontalAlignment="Left" Height="75" Margin="10,400,0,0" VerticalAlignment="Top" Width="774" FontSize="48" FontFamily="Arial" Click="Answer_button_Click"/>
-            <Button x:Name="Help" Content="?" HorizontalAlignment="Left" Height="50" Margin="735,210,0,0" VerticalAlignment="Top" Width="49" FontSize="36" Click="Help_Click"/>
+
+        <Grid x:Name="Question" Margin="0,0,0,10"  Visibility="Hidden">
+            <TextBlock x:Name="Description" HorizontalAlignment="Left" Height="273" Margin="10,35,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="774" FontSize="36" FontFamily="Arial" TextAlignment="Center" IsManipulationEnabled="True" FontStretch="SemiExpanded" />
+            <TextBlock x:Name="Letters" HorizontalAlignment="Left" Height="45" Margin="10,313,0,0" TextWrapping="Wrap" Text="TextBlock__" VerticalAlignment="Top" Width="720" FontSize="36" TextAlignment="Center" TextDecorations="{x:Null}" FontStretch="UltraExpanded" FontFamily="MingLiU-ExtB"/>
+            <TextBox x:Name="answer" HorizontalAlignment="Left" Height="50" Margin="10,363,0,0" TextWrapping="Wrap" Text="Введіть вашу відповідь тут" VerticalAlignment="Top" Width="774" TextAlignment="Center" FontFamily="Arial" FontSize="36" AutoWordSelection="True"/>
+            <Button x:Name="answer_button" Content="Відповісти" HorizontalAlignment="Left" Height="75" Margin="10,418,0,0" VerticalAlignment="Top" Width="630" FontSize="48" FontFamily="Arial" Click="Answer_button_Click"/>
+            <Button x:Name="Help" Content="?" HorizontalAlignment="Left" Height="45" Margin="735,313,0,0" VerticalAlignment="Top" Width="49" FontSize="36" Click="Help_Click"/>
+            <Button x:Name="back" Content="Назад" HorizontalAlignment="Left" Margin="645,418,0,0" VerticalAlignment="Top" Width="139" Height="75" FontSize="36" FontFamily="Arial" Click="Back_Click"/>
 
 
         </Grid>

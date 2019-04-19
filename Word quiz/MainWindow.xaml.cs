@@ -198,5 +198,11 @@ namespace Word_quiz
                 Letters.Text = WordQuiz.Level_3.Hidden[WordQuiz.CurrentQuestion];
             }
         }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            _1_2.Visibility = Visibility.Visible;
+            Question.Visibility = Visibility.Hidden;
+        }
     }
 }
